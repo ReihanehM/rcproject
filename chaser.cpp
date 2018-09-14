@@ -40,7 +40,7 @@ int main(int argc, char **argv)
 		cout << "chasing!" << endl ;
 		float euclidist = sqrt(pow(runner.x - chaser.x , 2)+pow(runner.y - chaser.y , 2));
 		float Sangle = atan2(( runner.y-chaser.y ) , (chaser.x -runner.x ));
-		if(euclidist >=0.0)
+		if(euclidist >=0.9)
 		{
 			msgM.linear.x = 0.3 * euclidist;
 			msgM.linear.y = 0;
