@@ -47,7 +47,7 @@ int main(int argc, char **argv)
 			msgM.linear.z = 0;
 			msgM.angular.x = 0;
 			msgM.angular.y = 0;
-			msgM.angular.z = 0.29 * (Sangle - chaser.theta )*1.5; 
+			msgM.angular.z = 0.29 * (Sangle - chaser.theta ); 
 		}
 		else
 		{
