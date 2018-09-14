@@ -57,13 +57,12 @@ int main(int argc, char **argv)
                         msgM.angular.x = 0;
                         msgM.angular.y = 0;
                         msgM.angular.z = 0;
-                        cout << "catch!:)";
 		}
 		master_pub.publish(msgM);
 		ros::spinOnce();
 		loop_rate.sleep();
-	}	
-        cout << "stop!"<<endl;
+	}
+	cout << "catch!:)";	
 	ros::spin();
 	return 0;
 }
